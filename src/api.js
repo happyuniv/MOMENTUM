@@ -17,7 +17,7 @@ const api = {
 
   fetchCityName: async (lat, lon) => {
     const res = await fetch(
-      `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&appid=${WEATHER_API_KEY}`
+      `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&appid=${WEATHER_API_KEY}`
     );
     return respondRequest(res);
   },
