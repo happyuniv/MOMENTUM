@@ -1,6 +1,6 @@
 import api from "./api.js";
 
-const atmosphere = () => {
+const weather = () => {
   const $weather = document.querySelector(".weather");
 
   const getSuccess = async (position) => {
@@ -35,4 +35,4 @@ const atmosphere = () => {
   navigator.geolocation.getCurrentPosition(getSuccess, getError);
 };
 
-atmosphere();
+weather();
