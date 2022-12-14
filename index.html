@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="src/app.css" />
     <title>Momentum</title>
   </head>
 
   <body>
+    <div class="clock"></div>
     <section class="center">
-      <div class="clock"></div>
-
       <article class="user-info">
         <form class="user-form">
           <input
@@ -21,15 +20,16 @@
           />
         </form>
         <div class="user"></div>
+        <button class="user-edit">EDIT</button>
       </article>
 
       <form class="search">
         <input
-          class="input"
+          class="search-input"
           type="search"
           placeholder="Google 검색 또는 URL 입력"
         />
-        <span class="icon">🔍</span>
+        <span class="search-icon">🔍</span>
       </form>
 
       <article class="todo">
@@ -44,19 +44,16 @@
       </article>
     </section>
 
-    <article class="atmosphere">
-      <div class="weather"></div>
-      <div class="pm"></div>
-    </article>
+    <article class="weather"></article>
 
     <div class="quote"></div>
 
-    <script src="background.js"></script>
-    <script src="clock.js"></script>
-    <script src="userInfo.js"></script>
-    <script src="search.js"></script>
-    <script src="todo.js"></script>
-    <script src="atmosphere.js" type="module"></script>
-    <script src="quote.js" type="module"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/userInfo.js"></script>
+    <script src="src/search.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/atmosphere.js" type="module"></script>
+    <script src="src/quote.js" type="module"></script>
+    <script src="src/background.js" type="module"></script>
   </body>
 </html>
