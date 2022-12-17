@@ -21,7 +21,7 @@
 
 ---
 
-### Learned about
+### Review
 * 로컬 스토리지를 통한 이미지 캐싱
 ```
   const now = new Date();
